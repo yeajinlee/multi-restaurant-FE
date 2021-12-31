@@ -54,7 +54,7 @@ function checkId() {
         error[0].innerHTML = "5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.";
         error[0].style.display = "block";
     } else {
-        error[0].innerHTML = "멋진 아이디네요!";
+        error[0].innerHTML = "사용가능한 아이디 입니다.";
         error[0].style.color = "#08A600";
         error[0].style.display = "block";
     }
@@ -70,7 +70,7 @@ function checkPw() {
         error[1].style.display = "block";
     } else if(!pwPattern.test(pw1.value)) {
         error[1].innerHTML = "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.";
-        pwMsg.innerHTML = "사용불가";
+        pwMsg.innerHTML = "사용 불가";
         pwMsgArea.style.paddingRight = "93px";
         error[1].style.display = "block";
         pwMsg.style.color = "red";
@@ -156,11 +156,7 @@ function isBirthRight() {
 }
 
 function checkAge() {
-    if(Number(yy.value) < 1920) {
-        error[4].innerHTML = "정말이세요?";
-    } else if(Number(yy.value) > 2019) {
-        error[4].innerHTML = "미래에서 오셨군요. ^^";
-    } else if(Number(yy.value) > 2005) {
+    if(Number(yy.value) > 2005) {
         error[4].innerHTML = "만 14세 미만의 어린이는 보호자 동의가 필요합니다.";
     } else {
         error[4].style.display = "none";
@@ -172,11 +168,12 @@ function isEmailCorrect() {
     var emailPattern = /[a-z0-9]{2,}@[a-z0-9-]{2,}\.[a-z0-9]{2,}/;
 
     if(email.value === ""){ 
-        error[6].style.display = "none"; 
+        error[7].style.display = "none"; 
     } else if(!emailPattern.test(email.value)) {
-        error[6].style.display = "block";
+        error[7].innerHTML = "이메일을 다시 확인해주세요.";
+        error[7].style.display = "block";
     } else {
-        error[6].style.display = "none"; 
+        error[7].style.display = "none"; 
     }
 
 }
@@ -185,20 +182,21 @@ function checkPhoneNum() {
     var isPhoneNum = /([01]{2,})([01679]{1,})([0-9]{3,4})([0-9]{4})/;
 
     if(mobile.value === "") {
-        error[7].innerHTML = "필수 정보입니다.";
-        error[7].style.display = "block";
+        error[8].innerHTML = "필수 정보입니다.";
+        error[8].style.display = "block";
     } else if(!isPhoneNum.test(mobile.value)) {
-        error[7].innerHTML = "형식에 맞지 않는 번호입니다.";
-        error[7].style.display = "block";
+        error[8].innerHTML = "번호를 다시 확인해주세요.";
+        error[8].style.display = "block";
     } else {
-        error[7].style.display = "none";
+        error[8].style.display = "none";
     }
 
     
 }
 
 function submit_check(){
-    //버튼 눌렀을 때 다시 한번 입력 체크 
+    //버튼 눌렀을 때 필수 정보 다시 한번 입력 체크 
+    //필수 정보: 아이디, 비밀번호, 비밀번호 확인, 이름, 전화번호
     if(id.value ==''){
         alert('아이디를 입력해 주세요');
         id.focus();
