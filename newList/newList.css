@@ -18,31 +18,59 @@ nav {
     height: 60px;
     background-color: #FA8072;
 }
+.content {
+    width: 1100px;
+    height: auto;
 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* background-color: ivory; */
+    padding-left: 80px;
+    padding-right: 80px;
+}
 div.title {
     height: 200px;
-    background-color: gainsboro;
+    background-color: whitesmoke;
     text-align: center;
     vertical-align: middle;
+    padding: 60px;
+}
+
+div.title b {
+    font-size: 25px;
+    padding: 20px;
 }
 div.content table {
     /* border: 1px solid black; */
-    font-size: 15px;
+    font-size: 14px;
+}
+div.content table a {
+    font-weight: bold;
 }
 .l_map img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
+    padding-top: 50px;
+    
 }
+span.r_list {
+    float: right;
+    width: 350px;
+    /* border: solid black; */
+}
+
 span.r_list img {
     width: 90px;
     height: 90px;
+    margin: 10px;
+    margin-right: 20px;
 }
 
 footer {
     width: 100%;
     background-color: lightgrey;
     padding: 30px 50px 50px;
-    /* margin-top: 100px; */
+    margin-top: 200px;
     line-height: 2rem;
     position: relative;
     clear:both;
