@@ -1,0 +1,102 @@
+#buttons {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.bv {
+  border: 1px solid salmon;
+  color: salmon;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 4px 13px;
+  margin: 1em;
+}
+body {
+  font-family: "Montserrat" sans-serif;
+}
+/* --------------------------------------- */
+.row {
+  display: flex;
+  grid-template-columns: auto auto;
+ 
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-left3 {
+  position: relative;
+  text-align: start;
+  color: white;
+}
+.bottom-left2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .row img {
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 6px;
+    filter: brightness(90%);
+  }
+
+  .row h3,h6{
+    padding-left: 20px;
+  }
+/* --------------------------------------- */
+
+
+.image {
+  width: 35%;
+  object-fit: cover;
+}
+.contents {
+  width: 100%;
+  
+ margin-left: 20px;
+}
+
+
+
+
+
+.sidebar {
+  position: absolute;
+  background: salmon;
+  width: 350px;
+  height: auto;
+  top: 70px;
+  right: 0;
+  z-index: -99;
+  text-align: center;
+}
+
+.sidebar img {
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+}
+#loadMore {
+  width: 9%;
+  margin: auto;
+}
+#loadMore a {
+  background: salmon;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  padding: 7px 20px;
+  transition: all 0.25s ease-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.footer1 {
+  background-color: grey;
+}
+@media screen and (max-width: 1000px) {
+  .sidebar{display:none;}
+  #toogleButton {display:block} }
