@@ -8,6 +8,7 @@
     <title>상세정보</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="detail.css">
     <script src="detail.js"></script>
 </head>
@@ -18,19 +19,23 @@
             <a class="navbar-brand" href="Main.html"> MULTI <br> RESTAURANT</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
+                  </form>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <div class="col-lg-6">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <strong style="color:white">지역별</strong>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">지역1</a>
-                            <a class="dropdown-item" href="#">지역2</a>
-                            <a class="dropdown-item" href="#">지역3</a>
-                            <a class="dropdown-item" href="#">지역4</a>
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong style="color:white">지역별</strong>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">지역1</a>
+                                <a class="dropdown-item" href="#">지역2</a>
+                                <a class="dropdown-item" href="#">지역3</a>
+                                <a class="dropdown-item" href="#">지역4</a>
+                            </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mmain_sub.html" style="color:white"><strong>추천 메뉴</strong> </a>
@@ -39,165 +44,261 @@
                         <a class="nav-link" href="#" style="color:white"><strong>최근 후기</strong> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white"><strong>신규 개업</strong> </a>
+                        <a class="nav-link" href="/newList/newList.html" style="color:white"><strong>신규 개업</strong> </a>
                     </li>
                 </ul>
             </div>
-        </div>
+            </div>
             <form class="form-inline">
                 <button class="btn btn-sm btn-outline-light" type="button">로그인</button>
                 <button class="btn btn-sm btn-outline-light" type="button">회원가입</button>
                 <button class="btn btn-sm btn-outline-light" type="button">1:1 문의</button>
             </form>
     </nav>
-    <section class="info">
-        <div>
-            <div class="review_img">
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            <img src="../images/sushi.jpg" class="b_img">
-                            <img src="../images/sushi2.jpg" class="b_img">
-                            <img src="../images/sushi3.jpg" class="b_img">
-                            <td><img src="../images/sushi4.jpg" class="s_img"></td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/burger.jpg" class="s_img"></td>
-                    </tr>
-
-                </table>
-            </div>
-            <aside class></aside>
-            <div class="detail_info">
-                <img src="../images/placeholder.png" alt="map"></div>
-                <table>
-                    <th>일조초밥</th>
-                    <tr>
-                        <td>주소</td>
-                        <td>서울특별시 중구 퇴계로 00길 00</td>
-                    </tr>
-                    <tr>
-                        <td>전화번호</td>
-                        <td>02-000-0000</td>
-                    </tr>
-                    <tr>
-                        <td>가격대</td>
-                        <td>0만원-00만원</td>
-                    </tr>
-                    <tr>
-                        <td>소셜</td>
-                        <td><a href="https://www.instagram.com/?hl=ko">인스타그램</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="button" value="태그">
-                            <input type="button" value="태그">
-                            <input type="button" value="태그">
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    <section class="top_img">
+        <div class="review_img">
+            <img src="../images/sushi.jpg" >
+            <img src="../images/sushi2.jpg" >
+            <img src="../images/sushi3.jpg" >
+            <img src="../images/sushi4.jpg">
+            <img src="../images/sushi5.jpg">
+            <img src="../images/sushi6.jpg">
+            <img src="../images/sushi7.jpg">
+            <img src="../images/sushi8.jpg">
+            <img src="../images/sushi9.jpg" >
+            <img src="../images/sushi10.jpg" >
+            <img src="../images/sushi.jpg" >
+            <img src="../images/sushi2.jpg" >
+            <img src="../images/sushi3.jpg" >
+            <img src="../images/sushi4.jpg">
+            <img src="../images/sushi5.jpg">
+            <img src="../images/sushi6.jpg">
+            <img src="../images/sushi7.jpg">
+            <img src="../images/sushi8.jpg">
+            <img src="../images/sushi9.jpg" >
+            <img src="../images/sushi10.jpg" >
         </div>
     </section>
+
+    <aside class='l_map'>
+        <span>
+            <img src="../images/placeholder.png" alt="map"><br>
+        </span>
+        <div class='map_btn'>
+            <input type="button" value="지도 보기">&nbsp;&nbsp;&nbsp;
+            <input type="button" value="길찾기">
+        </div>
+
+
+    </aside>
+
+    <section class="r_info">
+        <div class="detail_info">
+            <span class="place_name">일조초밥</span>
+            <span class="star_wish">
+                <i class="fas fa-star"></i>&nbsp;
+                <span><b>4.5 / 5</b></span>&nbsp;&nbsp;&nbsp;
+                <span class="wish_cnt">리뷰 35  찜 12</span>&nbsp;
+                <i class="far fa-heart"></i></th>
+            </span>
+            <table>
+                <tr>
+                    <td>주소</td>
+                    <td>서울특별시 중구 퇴계로 00길 00</td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td>02-000-0000</td>
+                </tr>
+                <tr>
+                    <td>가격대</td>
+                    <td>0만원-00만원</td>
+                </tr>
+                <tr>
+                    <td>소셜</td>
+                    <td><a href="https://www.instagram.com/?hl=ko">인스타그램</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tag">
+                        <input type="button" value="오마카세">
+                        <input type="button" value="데이트">
+                        <input type="button" value="조용한">
+                        <input type="button" value="을지로 4가">
+                        <input type="button" value="종로 맛집">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
     <hr>
-    <aside>
+    <aside class="l_menu">
         <div class="recomm">
             <table>
                 <th>주변 추천</th>
                 <tr>
+                    <td><img src="../images/pizza.jpg" alt=""></td>
+                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
+                    <td><i class="fas fa-star"></i>&nbsp;&nbsp;4.0/5</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/kimbap.jpg" alt=""></td>
+                    <td><a href="#">김밥천국</a><br>분식<br>광희동<br>0천원~0만원대</td>
+                    <td><i class="fas fa-star"></i>&nbsp;&nbsp;3.5/5</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/kbbq.jpg" alt=""></td>
+                    <td><a href="#">솥뚜껑</a><br>삼겹살<br>종로5가<br>0만원~0만원대</td>
+                    <td><i class="fas fa-star"></i>&nbsp;&nbsp;4.7/5</td>
+                </tr>
+                <tr>
                     <td><img src="../images/pasta.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
-                    <td>4.0/5</td>
+                    <td><a href="#">매드포갈릭</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
+                    <td><i class="fas fa-star"></i>&nbsp;&nbsp;4.3/5</td>
                 </tr>
                 <tr>
-                    <td><img src="../images/sushi.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
-                    <td>4.0/5</td>
-                </tr>
-                <tr>
-                    <td><img src="../images/sushi.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
-                    <td>4.0/5</td>
-                </tr>
-                <tr>
-                    <td><img src="../images/sushi.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
-                    <td>4.0/5</td>
-                </tr>
-                <tr>
-                    <td><img src="../images/sushi.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
-                    <td>4.0/5</td>
+                    <td><img src="../images/burger.jpg" alt=""></td>
+                    <td><a href="#">버거킹</a><br>햄버거<br>광희동<br>0만원~0만원대</td>
+                    <td><i class="fas fa-star"></i>&nbsp;&nbsp;3.7/5</td>
                 </tr>
             </table>
         </div>
     </aside>
 
     <section class="review">
-        <div class="review">
-            <p class="person-grade">
-            <span class="btxt">
-                <b>미식가</b>
-                Lv.1
-            </span>
-            <span class="star-date">
-                <i class="date">2일 전</i>
-            </span>
-        </p>
-        <p class="review_contents">가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천</p>
-        <a href="" class="more-btn" style="display:none;">...더보기</a>
-        <img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt="">
+        <p class="review_cnt"><b>리뷰 (35)</b></p>
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/burger.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>미식가</b></span>
+                        <span class="level">&nbsp;Lv. 1 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2일 전</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img src="../images/sushi3.jpg" alt="">
+            </p>
         </div>
-        <div class="review">
-            <p class="person-grade">
-            <span class="btxt">
-                <b>미식가</b>
-                Lv.1
-            </span>
-            <span class="star-date">
-                <i class="date">2일 전</i>
-            </span>
-        </p>
-        <p class="review_contents">가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천</p>
-        <a href="" class="more-btn" style="display:none;">...더보기</a>
-        <img src="../images/sushi.jpg" alt="">
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/kbbq.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>고든램지</b></span>
+                        <span class="level">&nbsp;Lv. 6 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2021년 12월 11일</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi4.jpg" alt=""><img src="../images/sushi5.jpg" alt="">
+            </p>
         </div>
-        <div class="review">
-            <p class="person-grade">
-            <span class="btxt">
-                <b>미식가</b>
-                Lv.1
-            </span>
-            <span class="star-date">
-                <i class="date">2일 전</i>
-            </span>
-        </p>
-        <p class="review_contents">가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천</p>
-        <a href="" class="more-btn" style="display:none;">...더보기</a>
-        <img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt="">
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/kimbap.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>제이미올리버</b></span>
+                        <span class="level">&nbsp;Lv. 4 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2021년 11월 4일</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt="">
+            </p>
         </div>
-        <div class="review">
-            <p class="person-grade">
-            <span class="btxt">
-                <b>미식가</b>
-                Lv.1
-            </span>
-            <span class="star-date">
-                <i class="date">2일 전</i>
-            </span>
-        </p>
-        <p class="review_contents">가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천</p>
-        <a href="" class="more-btn" style="display:none;">...더보기</a>
-        
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/burger.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>미식가</b></span>
+                        <span class="level">&nbsp;Lv. 1 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2일 전</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img src="../images/sushi3.jpg" alt="">
+            </p>
         </div>
-        
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/kbbq.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>고든램지</b></span>
+                        <span class="level">&nbsp;Lv. 6 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2021년 12월 11일</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi4.jpg" alt=""><img src="../images/sushi5.jpg" alt="">
+            </p>
+        </div>
+        <div class="ind_review">
+            <table>
+                <tr>
+                    <td><img src="../images/kimbap.jpg" class="profile_img"></td>
+                    <td>
+                        <span class="username"><b>제이미올리버</b></span>
+                        <span class="level">&nbsp;Lv. 4 <br></span>
+                        <span class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                        <span class="star_date">&nbsp;2021년 11월 4일</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="review_contents">
+                가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+            </p>
+            <p class="re_bottom_img">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt="">
+            </p>
+        </div>
     </section>
 
     <footer>
         <div class="top">
             <div class="container">
-                <a href="#" >사업 문의</a> /
+                <a href="#">사업 문의</a> /
                 <a href="#">개인정보처리방침</a> /
                 <a href="#">사업자 정보</a>
             </div>
