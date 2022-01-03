@@ -47,11 +47,9 @@ div.content table {
 div.content table a {
     font-weight: bold;
 }
-.l_map img{
-    width: 500px;
-    height: 500px;
-    padding-top: 50px;
-    
+div.l_map {
+    display: inline-block;
+    margin-top: 30px;
 }
 span.r_list {
     float: right;

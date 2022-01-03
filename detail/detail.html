@@ -8,7 +8,8 @@
     <title>상세정보</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="detail.css">
     <script src="detail.js"></script>
 </head>
@@ -22,7 +23,7 @@
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
-                  </form>
+                </form>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <div class="col-lg-6">
@@ -36,7 +37,7 @@
                                 <a class="dropdown-item" href="#">지역3</a>
                                 <a class="dropdown-item" href="#">지역4</a>
                             </div>
-                    </li>
+ 
                     <li class="nav-item">
                         <a class="nav-link" href="mmain_sub.html" style="color:white"><strong>추천 메뉴</strong> </a>
                     </li>
@@ -57,39 +58,61 @@
     </nav>
     <section class="top_img">
         <div class="review_img">
-            <img src="../images/sushi.jpg" >
-            <img src="../images/sushi2.jpg" >
-            <img src="../images/sushi3.jpg" >
-            <img src="../images/sushi4.jpg">
-            <img src="../images/sushi5.jpg">
-            <img src="../images/sushi6.jpg">
-            <img src="../images/sushi7.jpg">
-            <img src="../images/sushi8.jpg">
-            <img src="../images/sushi9.jpg" >
-            <img src="../images/sushi10.jpg" >
-            <img src="../images/sushi.jpg" >
-            <img src="../images/sushi2.jpg" >
-            <img src="../images/sushi3.jpg" >
-            <img src="../images/sushi4.jpg">
-            <img src="../images/sushi5.jpg">
-            <img src="../images/sushi6.jpg">
-            <img src="../images/sushi7.jpg">
-            <img src="../images/sushi8.jpg">
-            <img src="../images/sushi9.jpg" >
-            <img src="../images/sushi10.jpg" >
+            <img src="../images/sushi.jpg" class="ind_img" onclick="myFunction(this);">
+            <img src="../images/sushi2.jpg" class="ind_img">
+            <img src="../images/sushi3.jpg" class="ind_img">
+            <img src="../images/sushi4.jpg" class="ind_img">
+            <img src="../images/sushi5.jpg" class="img">
+            <img src="../images/sushi6.jpg" class="img">
+            <img src="../images/sushi7.jpg" class="img">
+            <img src="../images/sushi8.jpg" class="img">
+            <img src="../images/sushi9.jpg" class="img">
+            <img src="../images/sushi10.jpg" class="img">
+            <img src="../images/sushi.jpg" class="img">
+            <img src="../images/sushi2.jpg" class="img">
+            <img src="../images/sushi3.jpg" class="img">
+            <img src="../images/sushi4.jpg" class="img">
+            <img src="../images/sushi5.jpg" class="img">
+            <img src="../images/sushi6.jpg" class="img">
+            <img src="../images/sushi7.jpg" class="img">
+            <img src="../images/sushi8.jpg" class="img">
+            <img src="../images/sushi9.jpg" class="img">
+            <img src="../images/sushi10.jpg" class="img">
+
         </div>
-    </section>
+        
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal_content">
+            </div>
+            
+            <!-- The expanding image container -->
+            
+        <!-- <div class="container">
+            
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-    <aside class='l_map'>
-        <span>
-            <img src="../images/placeholder.png" alt="map"><br>
-        </span>
-        <div class='map_btn'>
-            <input type="button" value="지도 보기">&nbsp;&nbsp;&nbsp;
-            <input type="button" value="길찾기">
+            
+            <img id="expandedImg" style="width:100%">
+
+            
+            <div id="imgtext"></div>
+        </div> -->
+
+</section>
+
+<aside class='l_map'>
+    <span>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.390980157256!2d126.98338321450412!3d37.569410079797336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e8bd68ec11%3A0x6ee78e54814af2d9!2z6rCT64207Iqk7Iuc!5e0!3m2!1sko!2skr!4v1641207292048!5m2!1sko!2skr"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+    </span>
+    <div class='map_btn'>
+            <!-- <button id="map_view">크게보기</button> -->
+            <button id="myBtn">길찾기</button>
+
         </div>
-
-
     </aside>
 
     <section class="r_info">
@@ -98,7 +121,7 @@
             <span class="star_wish">
                 <i class="fas fa-star"></i>&nbsp;
                 <span><b>4.5 / 5</b></span>&nbsp;&nbsp;&nbsp;
-                <span class="wish_cnt">리뷰 35  찜 12</span>&nbsp;
+                <span class="wish_cnt">리뷰 35 찜 12</span>&nbsp;
                 <i class="far fa-heart"></i></th>
             </span>
             <table>
@@ -137,8 +160,8 @@
             <table>
                 <th>주변 추천</th>
                 <tr>
-                    <td><img src="../images/pizza.jpg" alt=""></td>
-                    <td><a href="#">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
+                    <td><a href="../detail/detail.html"><img src="../images/pizza.jpg" alt=""></a></td>
+                    <td><a href="../detail/detail.html">파파존스</a><br>피자, 파스타<br>을지로<br>0만원~0만원대</td>
                     <td><i class="fas fa-star"></i>&nbsp;&nbsp;4.0/5</td>
                 </tr>
                 <tr>
@@ -175,7 +198,8 @@
                         <span class="username"><b>미식가</b></span>
                         <span class="level">&nbsp;Lv. 1 <br></span>
                         <span class="star">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </span>
                         <span class="star_date">&nbsp;2일 전</span>
                     </td>
@@ -185,7 +209,8 @@
                 가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
             </p>
             <p class="re_bottom_img">
-                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img src="../images/sushi3.jpg" alt="">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img
+                    src="../images/sushi3.jpg" alt="">
             </p>
         </div>
         <div class="ind_review">
@@ -217,7 +242,8 @@
                         <span class="username"><b>제이미올리버</b></span>
                         <span class="level">&nbsp;Lv. 4 <br></span>
                         <span class="star">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i>
                         </span>
                         <span class="star_date">&nbsp;2021년 11월 4일</span>
                     </td>
@@ -238,7 +264,8 @@
                         <span class="username"><b>미식가</b></span>
                         <span class="level">&nbsp;Lv. 1 <br></span>
                         <span class="star">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </span>
                         <span class="star_date">&nbsp;2일 전</span>
                     </td>
@@ -248,7 +275,8 @@
                 가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
             </p>
             <p class="re_bottom_img">
-                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img src="../images/sushi3.jpg" alt="">
+                <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img
+                    src="../images/sushi3.jpg" alt="">
             </p>
         </div>
         <div class="ind_review">
@@ -280,7 +308,8 @@
                         <span class="username"><b>제이미올리버</b></span>
                         <span class="level">&nbsp;Lv. 4 <br></span>
                         <span class="star">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i>
                         </span>
                         <span class="star_date">&nbsp;2021년 11월 4일</span>
                     </td>
@@ -312,6 +341,38 @@
             </div>
         </div>
     </footer>
-</body>
+    <script>
+        let modal = document.querySelector(".modal");
+        let img = document.querySelector(".ind_img");
+        let modal_img = document.querySelector(".modal_content");
+        let span = document.querySelector(".close");
 
+        img.addEventListener("click", () => {
+            modalDisplay("block");
+            modal_img.src = img.src;
+        });
+        span.addEventListener("click", () => {
+        modalDisplay("none");
+        });
+        modal.addEventListener("click", () => {
+            modalDisplay("none");
+        });
+        function modalDisplay(text) {
+            modal.style.display = text;
+        }
+
+        // function myFunction(imgs) {
+        //     // Get the expanded image
+        //     var expandImg = document.getElementById("expandedImg");
+        //     // Get the image text
+        //     var imgText = document.getElementById("imgtext");
+        //     // Use the same src in the expanded image as the image being clicked on from the grid
+        //     expandImg.src = imgs.src;
+        //     // Use the value of the alt attribute of the clickable image as text inside the expanded image
+        //     imgText.innerHTML = imgs.alt;
+        //     // Show the container element (hidden with CSS)
+        //     expandImg.parentElement.style.display = "block";
+        // }
+    </script>
+</body>
 </html>
