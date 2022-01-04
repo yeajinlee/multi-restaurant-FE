@@ -13,13 +13,16 @@ body {
     min-height: 100vh;
     position: relative;
 }
-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #FA8072;
+.navbar-default {
+    border: none;
+    background-color: salmon;
+    margin: 0px;
+    padding: 0px;
+    /* padding: 0px auto; */
 }
 .content {
-    width: 1100px;
+    /* width: 1100px; */
+    width: 85%;
     height: auto;
 
     margin-top: 30px;
@@ -29,15 +32,75 @@ nav {
     padding-right: 80px;
 }
 div.title {
-    height: 200px;
+    height: 240px;
     background-color: whitesmoke;
     text-align: center;
     vertical-align: middle;
     padding: 60px;
 }
+.title_txt u {
+    color: salmon;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 600px;
+    background-color: rgba(85, 85, 85, 0.966);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -20%;
+    margin-left: -100px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
 
 div.title b {
-    font-size: 25px;
+    font-size: 30px;
     padding: 20px;
 }
 div.content table {
@@ -53,15 +116,24 @@ div.l_map {
 }
 span.r_list {
     float: right;
-    width: 350px;
+    width: 400px;
+    margin-bottom: 50px;
     /* border: solid black; */
 }
-
+.r_list table {
+    width: 370px;
+}
+.r_list table th {
+    font-size: 17px;
+    padding-left: 5px;
+}
 span.r_list img {
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 10px 10px;
+}
+.open_date {
+    margin-top: 3px;
 }
 
 footer {
