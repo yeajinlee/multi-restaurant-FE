@@ -1,0 +1,25 @@
+.navbar-default {
+    border: none;
+    background-color: salmon;
+    margin: 0px;
+    padding: 0px;
+    /* padding: 0px auto; */
+}
+
+.jumbotron {
+    background-color: rgb(131, 129, 129);
+}
+
+.btn-lg {
+    background-color: salmon;
+}
+
+
+footer {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 30px 50px 50px;
+    line-height: 2rem;
+    position: relative;
+    clear: both;
+}
