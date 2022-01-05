@@ -227,9 +227,9 @@ div.ind_review {
     border-bottom: 1px solid lightgray;
     padding-bottom: 20px;
 }
-.ind_review:hover {
+/* .ind_review:hover {
     background-color: whitesmoke;
-}
+} */
 .review_cnt {
     font-size: 20px;
     margin: 10px;
