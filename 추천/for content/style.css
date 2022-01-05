@@ -21,15 +21,15 @@
 .content h3{
   padding-left: 20px;
   padding-bottom: 30px;
+  font-weight: bolder;
+  
 }
 
   .row{
     grid-template-columns:auto auto;
-    grid-template-rows: 250px ;
+    grid-template-rows: 200px ;
     border-bottom: 2px solid salmon;    
-  
     padding-top: 2em;
-    padding-bottom: 2em;
     display: flex;
     width: 50%;
     margin: auto;
@@ -37,7 +37,6 @@
   }
 .me{
     display: grid;
-  
     grid-template-rows: 280px;
     background-color: rgb(255, 231, 228);
     border-bottom: rgb(231, 229, 229);
@@ -64,19 +63,14 @@ p{
 }
 .content .Nbtn{
 text-decoration: none;
-  float: right;
-font-size:small;
-font-style: italic;
-
+float: right;
+margin-bottom: 10px;
 }
 
 
 .map{
- 
-  margin-top: 25px;
-
+   margin-top: 25px;
   height: 300px;
-  
   text-align: center;
 }
 
@@ -154,7 +148,7 @@ body{
 }
 *{
 padding: 0;
-margin: 0;
+margin: 0 auto;
 }
 
 .navbar-default {
@@ -163,4 +157,29 @@ margin: 0;
   margin: 0px;
   padding: 0px;
   /* padding: 0px auto; */
+}
+
+
+.boxy {
+  width:200px;
+   background: rgb(255, 176, 167);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  position:relative;
+  font-size: small;
+}
+
+.wordy:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid rgb(255, 176, 167);
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(255, 176, 167);
+  border-bottom: 10px solid transparent;
+  right: -10px;
+  top: 6px;
 }
