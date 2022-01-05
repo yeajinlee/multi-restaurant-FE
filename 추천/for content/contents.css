@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
- 
 }
-
+.d-flex{
+  margin: 0 auto;
+}
 
 .search h1{
 padding: 20px 30px;
@@ -15,7 +15,7 @@ padding: 20px 30px;
 /* ---------------------------------------------- */
 main {
   display: grid;
-  grid-template-rows: 30px 70px auto 50px;
+  grid-template-rows: 70px 90px auto 50px;
   grid-template-columns: 1fr 20%;
 
   grid-template-areas:
@@ -31,7 +31,7 @@ main {
   margin: auto;
   display: flex;
   justify-content: center;
-  
+ 
 }
 .bv {
   border: 1.5px solid salmon;
@@ -83,6 +83,10 @@ color: black;
 text-align: left;
 margin: 5px 20px;
 }
+.row1 h3{
+  font-weight: bolder;
+  font-size: larger ;
+}
 
 /* ---------------------------------------- */
 .side {
@@ -90,8 +94,10 @@ margin: 5px 20px;
   grid-area: side;
   text-align: center;
 }
-.side h3, h2{
-  color:black
+.side h4, h5{
+  color:black;
+  padding: 10px 10px;
+  font-weight: bolder;
 }
 .side img {
 height: 200px;
