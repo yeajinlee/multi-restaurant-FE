@@ -39,6 +39,7 @@ div.title b {
     flex-wrap: wrap;
     padding: 0 4px;
     margin: 15px;
+    margin-bottom: 100px;
 }
   
   /* Create two equal columns that sits next to each other */
@@ -114,4 +115,13 @@ div.title b {
     height: 100px;
     margin: 5px;
     margin-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: lightgrey; 
+    padding: 30px 50px 50px;
+    line-height: 2rem;
+    position: relative;
+    clear:both;
 }
