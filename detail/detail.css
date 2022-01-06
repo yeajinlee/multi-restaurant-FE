@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "NanumBarunGothic";
+    src: url(../font/NanumBarunGothic.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  
 * {
     padding: 0;
     margin: 0 auto;
@@ -12,6 +20,8 @@ a {
 body {
     min-height: 100vh;
     position: relative;
+    font-family: "NanumBarunGothic";
+    
 }
 .navbar-default {
     border: none;
@@ -23,6 +33,7 @@ body {
 
 .top_img {
     margin: 3px;
+    margin-top: 80px;
     width: 100%;
 }
 .review_img {
