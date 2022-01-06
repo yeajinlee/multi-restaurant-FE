@@ -174,7 +174,7 @@
                 <i class="fas fa-star"></i>&nbsp;
                 <span><b>4.5 / 5</b></span>&nbsp;&nbsp;&nbsp;
                 <span class="wish_cnt">리뷰 35 찜 12</span>&nbsp;
-                <i class="far fa-heart"></i></th>
+                <i class="far fa-heart" id="heart" onclick="setWishList();"></i></th>
             </span>
             <table>
                 <tr>
@@ -451,6 +451,18 @@
           dots[slideIndex-1].className += " active";
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
-        </script>
+
+        
+        function setWishList() {
+            if (document.getElementById('heart').className == 'far fa-heart') {
+                document.getElementById('heart').className='fas fa-heart';
+                alert("이 가게를 찜했습니다.");
+            } else {
+                document.getElementById('heart').className='far fa-heart';
+                alert("찜 목록에서 삭제되었습니다.");
+            }
+            cnt++;
+        }
+    </script>
 </body>
 </html>
