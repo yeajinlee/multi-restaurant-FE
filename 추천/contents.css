@@ -26,8 +26,18 @@ padding: 20px 30px;
 
  
 }
+.space{
+  height: 80px;
+}
+
+.fixedtop{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 /* ---------------------------------------------- */
 main {
+  
   display: grid;
   grid-template-rows: 70px 90px auto ;
   grid-template-columns: 1fr 20%;

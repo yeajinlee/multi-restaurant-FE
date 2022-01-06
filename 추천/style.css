@@ -5,6 +5,10 @@
   font-weight: normal;
 }
 
+.fixedtop{
+  position: fixed;
+  width: 100%;
+}
 
 #all img {
     width: 100%;
@@ -44,14 +48,14 @@
   }
 .me{
     display: grid;
-    grid-template-rows: 280px;
+    grid-template-rows: 350px;
     background-color: rgb(255, 231, 228);
     border-bottom: rgb(231, 229, 229);
 
 }
 .up{
     text-align: center;
-    margin-top: 5em;
+    margin-top: 10em;
 }
 p{
   padding-left: 15px;
