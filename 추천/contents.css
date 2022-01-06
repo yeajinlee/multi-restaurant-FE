@@ -1,8 +1,22 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url(../font/NanumBarunGothic.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 * {
   
   padding: 0;
   box-sizing: border-box;
 }
+
+
+body {
+  font-family: "NanumBarunGothic";
+}
+
 .heading *{
   margin: 0 auto;
 }
