@@ -21,6 +21,9 @@ body {
     min-height: 100vh;
     position: relative;
 }
+.info {
+  margin-top: 80px;
+}
 .navbar-default {
     border: none;
     background-color: salmon;
