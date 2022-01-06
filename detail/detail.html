@@ -21,57 +21,56 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="detail.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-default navbar-expand-lg navbar-dark">
-        <a href="../main/main.html"><img src="../images/nav.png" width="80" height="80" alt="">
-            <a class="navbar-brand" href="../main/main.html"> MULTI <br> RESTAURANT</a>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-default navbar-expand-lg navbar-dark">
+            <a href="../main/main.html"><img src="../images/nav.png" width="80" height="80" alt="">
+                <a class="navbar-brand" href="../main/main.html"> MULTI <br> RESTAURANT</a>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <div class="col-lg-6">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong style="color:white">지역별</strong>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">어디어디</a>
+                                    <a class="dropdown-item" href="#">지역2</a>
+                                    <a class="dropdown-item" href="#">지역3</a>
+                                    <a class="dropdown-item" href="#">지역4</a>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../main/reco1.html" style="color:white"><strong>추천 메뉴</strong> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../reviewList/reviewList.html" style="color:white"><strong>최근 후기</strong> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../newList/newList.html" style="color:white"><strong>신규 개업</strong> </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+    
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <div class="col-lg-6">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong style="color:white">지역별</strong>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">어디어디</a>
-                                <a class="dropdown-item" href="#">지역2</a>
-                                <a class="dropdown-item" href="#">지역3</a>
-                                <a class="dropdown-item" href="#">지역4</a>
-                            </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../main/reco1.html" style="color:white"><strong>추천 메뉴</strong> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../reviewList/reviewList.html" style="color:white"><strong>최근 후기</strong> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../newList/newList.html" style="color:white"><strong>신규 개업</strong> </a>
-                    </li>
+                        <div class="col-lg-6"></div>
+                        <a class href="#" id="navbarDropdown"
+                        data-toggle="dropdown"><img src="../images/login.png" alt="Menu" width="80" height="80" /></a>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../login_join/login.html">로그인</a>
+                        <a class="dropdown-item" href="../login_join/join.html">회원가입</a>
+                    </div>
+                </div>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
-                </form>
-            </div>
-            </div>
-
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <div class="col-lg-6"></div>
-                    <a class href="#" id="navbarDropdown"
-                    data-toggle="dropdown"><img src="../images/login.png" alt="Menu" width="80" height="80" /></a>
-                </div>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../login_join/login.html">로그인</a>
-                    <a class="dropdown-item" href="../login_join/join.html">회원가입</a>
-                </div>
-            </div>
-            </ul>
-    </nav>
+        </nav>
     <section class="top_img">
         <div class="review_img">
             <img src="../images/sushi.jpg" class="ind_img" onClick="openModal(); currentSlide(1)">
