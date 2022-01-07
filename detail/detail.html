@@ -73,16 +73,16 @@
     </nav>
     <section class="top_img">
         <div class="review_img">
-            <img src="../images/sushi.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi2.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi3.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi4.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi5.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi6.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi7.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi8.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi9.jpg" class="ind_img" onClick="openModal();">
-            <img src="../images/sushi10.jpg" class="ind_img" onClick="openModal();">
+            <img src="../images/sushi.jpg" class="ind_img" onClick="openModal(); currentSlide(1)">
+            <img src="../images/sushi2.jpg" class="ind_img" onClick="openModal(); currentSlide(2)">
+            <img src="../images/sushi3.jpg" class="ind_img" onClick="openModal(); currentSlide(3)">
+            <img src="../images/sushi4.jpg" class="ind_img" onClick="openModal(); currentSlide(4)">
+            <img src="../images/sushi5.jpg" class="ind_img" onClick="openModal(); currentSlide(5)">
+            <img src="../images/sushi6.jpg" class="ind_img" onClick="openModal(); currentSlide(6)">
+            <img src="../images/sushi7.jpg" class="ind_img" onClick="openModal(); currentSlide(7)">
+            <img src="../images/sushi8.jpg" class="ind_img" onClick="openModal(); currentSlide(8)">
+            <img src="../images/sushi9.jpg" class="ind_img" onClick="openModal(); currentSlide(9)">
+            <img src="../images/sushi10.jpg" class="ind_img" onClick="openModal(); currentSlide(10)">
         </div>
         
         <!-- The Modal/Lightbox -->
@@ -429,6 +429,9 @@
           showSlides(slideIndex += n);
         }
         
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
 
         function showSlides(n) {
           var i;
