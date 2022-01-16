@@ -73,71 +73,71 @@
     </nav>
     <section class="top_img">
         <div class="review_img">
-            <img src="../images/sushi.jpg" class="ind_img" onClick="openModal(); currentSlide(1)">
-            <img src="../images/sushi2.jpg" class="ind_img" onClick="openModal(); currentSlide(2)">
-            <img src="../images/sushi3.jpg" class="ind_img" onClick="openModal(); currentSlide(3)">
-            <img src="../images/sushi4.jpg" class="ind_img" onClick="openModal(); currentSlide(4)">
-            <img src="../images/sushi5.jpg" class="ind_img" onClick="openModal(); currentSlide(5)">
-            <img src="../images/sushi6.jpg" class="ind_img" onClick="openModal(); currentSlide(6)">
-            <img src="../images/sushi7.jpg" class="ind_img" onClick="openModal(); currentSlide(7)">
-            <img src="../images/sushi8.jpg" class="ind_img" onClick="openModal(); currentSlide(8)">
-            <img src="../images/sushi9.jpg" class="ind_img" onClick="openModal(); currentSlide(9)">
-            <img src="../images/sushi10.jpg" class="ind_img" onClick="openModal(); currentSlide(10)">
+            <img src="../images/sushi.jpg" class="ind_img" onClick="openTopModal(); currentSlide(1)">
+            <img src="../images/sushi2.jpg" class="ind_img" onClick="openTopModal(); currentSlide(2)">
+            <img src="../images/sushi3.jpg" class="ind_img" onClick="openTopModal(); currentSlide(3)">
+            <img src="../images/sushi4.jpg" class="ind_img" onClick="openTopModal(); currentSlide(4)">
+            <img src="../images/sushi5.jpg" class="ind_img" onClick="openTopModal(); currentSlide(5)">
+            <img src="../images/sushi6.jpg" class="ind_img" onClick="openTopModal(); currentSlide(6)">
+            <img src="../images/sushi7.jpg" class="ind_img" onClick="openTopModal(); currentSlide(7)">
+            <img src="../images/sushi8.jpg" class="ind_img" onClick="openTopModal(); currentSlide(8)">
+            <img src="../images/sushi9.jpg" class="ind_img" onClick="openTopModal(); currentSlide(9)">
+            <img src="../images/sushi10.jpg" class="ind_img" onClick="openTopModal(); currentSlide(10)">
         </div>
         
         <!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+<div id="top_modal" class="modal">
+    <span class="close cursor" onclick="closeTopModal()">&times;</span>
     <div class="modal-content">
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">1 / 10</div>
-        <img src="../images/sushi.jpg" height=400px>
+        <img src="../images/sushi.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">2 / 10</div>
-        <img src="../images/sushi2.jpg" height=400px>
+        <img src="../images/sushi2.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">3 / 10</div>
-        <img src="../images/sushi3.jpg" height=400px>
+        <img src="../images/sushi3.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">4 / 10</div>
-        <img src="../images/sushi4.jpg" height=400px>
+        <img src="../images/sushi4.jpg" height="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">5 / 10</div>
-        <img src="../images/sushi5.jpg" height=400px>
+        <img src="../images/sushi5.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">6 / 10</div>
-        <img src="../images/sushi6.jpg" height=400px>
+        <img src="../images/sushi6.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">7 / 10</div>
-        <img src="../images/sushi7.jpg" height=400px>
+        <img src="../images/sushi7.jpg" height="100%">
       </div>
   
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">8 / 10</div>
-        <img src="../images/sushi8.jpg" height=400px>
+        <img src="../images/sushi8.jpg" height="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">9 / 10</div>
-        <img src="../images/sushi9.jpg" height=400px>
+        <img src="../images/sushi9.jpg" height="100%">
       </div>
 
-      <div class="mySlides">
+      <div class="top_modal_slides">
         <div class="numbertext">10 / 10</div>
-        <img src="../images/sushi10.jpg" height=400px>
+        <img src="../images/sushi10.jpg" height="100%">
       </div>
   
       <!-- Next/previous controls -->
@@ -243,7 +243,34 @@
     </aside>
 
     <section class="review">
-        <p class="review_cnt"><b>리뷰 (35)</b></p>
+        <span class="review_cnt"><b>리뷰 (35)</b></span>
+        <span  class="write">
+            <table onclick="openWriteModal()">
+                <tr><td>&nbsp;<i class="far fa-edit" id="write_btn"></i></td></tr>
+                <tr><td>리뷰쓰기</td></tr>
+            </table>
+        </span>
+
+        <!-- Write Review -->
+        <div id="write_modal" class="modal">
+            <span class="close cursor" onclick="closeWriteModal()">&times;</span>
+            <div class="write_content">
+                <form action="#">
+                    <table class="write_form">
+                        <tr><td><p id="write_title"> <span id="res_name">일조초밥</span> 어떠셨나요?</p></td></tr>
+                        <tr><td><p id="write_star">
+                            <i class="fas fa-star" id="star1" onclick="clickStar(this.id)"><i class="fas fa-star" id="star2" onclick="clickStar(this.id)"><i class="fas fa-star" id="star3" onclick="clickStar(this.id)"><i class="fas fa-star" id="star4" onclick="clickStar(this.id)"><i class="fas fa-star" id="star5" onclick="clickStar(this.id)">
+                        </p></td></tr>
+                        <tr><td><textarea name="wrtie_review" id="wrtie_review" placeholder="리뷰를 남겨주세요."></textarea></td></tr>
+                        <tr><td><input type="file" id="add_file"><p id="add_file_btn" onclick="add_file()"><i class="fas fa-plus"></i></p></td></tr>
+                        <tr><td><p id="add_review"><input type="submit" value="리뷰 등록" id="add_review_btn"></p></td></tr>
+                    </table>
+                </form>
+                
+            </div>
+        </div>
+
+
         <div class="ind_review">
             <table>
                 <tr>
@@ -376,12 +403,16 @@
                 <img src="../images/sushi.jpg" alt=""><img src="../images/sushi.jpg" alt="">
             </p>
         </div>
+
+
+        
+
     </section>
 
     <footer>
         <div class="column1">
          
-            <h2 class="text-left1">About Us  <img src="../footer_nav.png" alt=""></h2>
+            <h2 class="text-left1">About Us  <img src="../images/footer_nav.png" alt=""></h2>
             <p>모든 음식점을 위하여</p>
           
         </div>
@@ -412,17 +443,17 @@
     </footer>  
     <script>
         // Open the Modal
-        function openModal() {
-          document.getElementById("myModal").style.display = "block";
+        function openTopModal() {
+          document.getElementById("top_modal").style.display = "block";
         }
         
         // Close the Modal
-        function closeModal() {
-          document.getElementById("myModal").style.display = "none";
+        function closeTopModal() {
+          document.getElementById("top_modal").style.display = "none";
         }
         
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        // var slideIndex = 1;
+        // showSlides(slideIndex);
         
         // Next/previous controls
         function plusSlides(n) {
@@ -433,22 +464,17 @@
           showSlides(slideIndex = n);
         }
 
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
+        function showSlides(n) { 
+          var slides = document.getElementsByClassName("top_modal_slides");
+        
+          if (n > slides.length) {slideIndex = 1} //마지막 슬라이드에서 1번 슬라이드로
+          if (n < 1) {slideIndex = slides.length} //1번 슬라이드에서 마지막 슬라이드로
+          for (var i = 0; i < slides.length; i++) { //다음 슬라이드로 넘어가면 앞 슬라이드의 사진이 안보이도록
             slides[i].style.display = "none";
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          captionText.innerHTML = dots[slideIndex-1].alt;
+        
+          slides[slideIndex-1].style.display = "block"; //다음 슬라이드를 띄움
+        
         }
 
         
@@ -460,8 +486,52 @@
                 document.getElementById('heart').className='far fa-heart';
                 alert("찜 목록에서 삭제되었습니다.");
             }
-            cnt++;
         }
+        
+        function openWriteModal() {
+          document.getElementById("write_modal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeWriteModal() {
+          document.getElementById("write_modal").style.display = "none";
+        }
+
+        function add_file() {
+            document.getElementById('add_file').click();
+        }
+
+        function clickStar1() {
+            document.getElementById('star1').style="color:salmon";
+        }
+
+        function clickStar(clicked_id) {
+            var id = clicked_id;
+            if (id == 'star1' ) {
+                document.getElementById('star1').style="color:salmon";
+            } else if (id == 'star2') {
+                document.getElementById('star1').style="color:salmon";
+                document.getElementById('star2').style="color:salmon";
+            } else if (id == 'star3') {
+                document.getElementById('star1').style="color:salmon";
+                document.getElementById('star2').style="color:salmon";
+                document.getElementById('star3').style="color:salmon";
+            } else if (id == 'star4') {
+                document.getElementById('star1').style="color:salmon";
+                document.getElementById('star2').style="color:salmon";
+                document.getElementById('star3').style="color:salmon";
+                document.getElementById('star4').style="color:salmon";
+            } else if (id == 'star5') {
+                document.getElementById('star1').style="color:salmon";
+                document.getElementById('star2').style="color:salmon";
+                document.getElementById('star3').style="color:salmon";
+                document.getElementById('star4').style="color:salmon";
+                document.getElementById('star5').style="color:salmon";
+            }
+
+            
+        }
+
     </script>
 </body>
 </html>
