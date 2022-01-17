@@ -271,7 +271,34 @@
         </div>
 
 
-        <div class="ind_review">
+        <div id="review_modal" class="modal">
+            <span class="close cursor" onclick="closeReviewModal()">&times;</span>
+            <div class="review_modal_content">
+                <div id="modal_profile_img"><img src="../images/burger.jpg" class="profile_img"></div>
+                <div id="modal_profile">
+                    <span class="username"><b>미식가</b></span>
+                    <span class="level">&nbsp;Lv. 1 <br></span>
+                    <span class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </span>
+                    <span class="star_date">&nbsp;2일 전</span>
+                </div>
+                <div class="review_modal_btn"><input type="button" value="수정" id="review_edit"><input type="button" value="삭제" id="review_delete" onclick="check_delete()"></div>
+                <br>
+                <div class="review_contents">
+                    가격도 적당하고 맛있었어요 조용해서 데이트코스에 넣어도 좋을 것 같네요 종로 주변에서 먹어본 초밥집중에 제일 괜찮았어요 을지로맛집 추천
+                </div>
+                <div class="review_modal_img">
+                    <img src="../images/sushi.jpg" alt=""><img src="../images/sushi2.jpg" alt=""><img src="../images/sushi3.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="ind_review" onclick="openReviewModal()">
             <table>
                 <tr>
                     <td><img src="../images/burger.jpg" class="profile_img"></td>
@@ -294,6 +321,8 @@
                     src="../images/sushi3.jpg" alt="">
             </p>
         </div>
+
+
         <div class="ind_review">
             <table>
                 <tr>
@@ -487,7 +516,13 @@
                 alert("찜 목록에서 삭제되었습니다.");
             }
         }
-        
+        function openReviewModal() {
+            document.getElementById("review_modal").style.display = "block";
+        }
+        function closeReviewModal() {
+            document.getElementById("review_modal").style.display = "none";
+        }
+
         function openWriteModal() {
           document.getElementById("write_modal").style.display = "block";
         }
@@ -495,6 +530,11 @@
         // Close the Modal
         function closeWriteModal() {
           document.getElementById("write_modal").style.display = "none";
+          document.getElementById('star1').style.color="lightgray";
+          document.getElementById('star2').style.color="lightgray";
+          document.getElementById('star3').style.color="lightgray";
+          document.getElementById('star4').style.color="lightgray";
+          document.getElementById('star5').style.color="lightgray";
         }
 
         function add_file() {
@@ -508,7 +548,7 @@
         function clickStar(clicked_id) {
             var id = clicked_id;
             if (id == 'star1' ) {
-                document.getElementById('star1').style="color:salmon";
+                document.getElementById('star1').style.color="salmon";
             } else if (id == 'star2') {
                 document.getElementById('star1').style="color:salmon";
                 document.getElementById('star2').style="color:salmon";
@@ -527,8 +567,10 @@
                 document.getElementById('star3').style="color:salmon";
                 document.getElementById('star4').style="color:salmon";
                 document.getElementById('star5').style="color:salmon";
-            }
+            }            
+        }
 
+        function check_delete() {
             
         }
 
