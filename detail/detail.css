@@ -5,7 +5,6 @@
     font-weight: normal;
   }
   
-  
 * {
     padding: 0;
     margin: 0 auto;
@@ -316,17 +315,78 @@ textarea {
     background-color: salmon;
     padding: 7px 12px;
     color: white;
-    font-size: 17px;
+    font-size: 18px;
 }
-
+.review_modal_content {
+    width: 70%;
+    height: 95%;
+    background-color: white;
+    border-radius: 3px;
+    padding: 30px;
+}
+.review_modal_content div{
+    /* border: solid black; */
+}
+#modal_profile_img {
+    /* border: solid black; */
+    display: inline-block;
+    width: 85px;
+}
+#modal_profile {
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.review_modal_btn {
+    /* border: solid black; */
+    display: inline;
+    float: right;
+}
+.review_modal_btn input {
+    margin: 10px;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    
+}
+.review_modal_btn #review_edit {
+    color: salmon;
+    border: 2px solid salmon;
+    background-color: white;
+}
+.review_modal_btn #review_delete {
+    color: white;
+    border: 2px solid salmon;
+    background-color: salmon;
+}
+.review_modal_img {
+    width: 35%;
+    height: 85%;
+    /* border: solid red; */
+    float: right;
+    overflow-y: scroll;
+}
+.review_modal_img img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.modal .review_contents {
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 35px;
+}
 div.ind_review {
     border-bottom: 1px solid lightgray;
     padding-bottom: 20px;
 }
-/* .ind_review:hover {
+.ind_review:hover {
     background-color: whitesmoke;
     cursor: pointer;
-} */
+}
 .review_cnt {
     display: inline-block;
     font-size: 20px;
@@ -412,7 +472,7 @@ div.recomm a {
 }
 
 .review_contents {
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 footer{
